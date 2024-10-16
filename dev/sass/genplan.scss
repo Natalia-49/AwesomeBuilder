@@ -1,0 +1,15 @@
+.genplan{
+    // height: calc(100vh - 215px);
+    // overflow: hidden;
+    .building-item{
+        fill: #fcf40700;
+        fill-opacity: 0.3;
+        stroke: #fcf40700;
+        stroke-width: 3px;
+        transition: .1s;
+        &:hover{
+            fill: #fcf407;   
+            stroke: #fcf407;
+        }
+    }
+}

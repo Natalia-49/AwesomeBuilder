@@ -1,7 +1,24 @@
-footer{
-    height: 100px;
-    background: $secondary-color;
+footer{    
     margin-top: auto;
+    background-color:  $color-2;
+    color: $color-1;
 }
-
+.information-list{
+    display: flex;
+    gap: 12px;
+    padding: 24px 0;
+}
+.information-item{
+    list-style: none;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid $color-3;
+    a{
+        color: $color-3;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;         
+        }
+    }
+}
  

@@ -1,8 +1,20 @@
 header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
-	a {
-		color: #fff;
+	background-color: $color-6;	
+	padding: 24px 0;
+	.container{
+		display: flex;
+	}
+}
+.logo{
+	display: inline-block;
+	max-width: 160px;
+}
+.header-nav{
+	margin-left: auto;
+	font-size: 22px;
+	display: flex;
+	.header-item{
+		padding: 12px 24px;
+		color: $color-1;
 	}
 }
