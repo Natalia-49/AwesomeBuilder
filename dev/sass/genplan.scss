@@ -1,15 +1,56 @@
-.genplan{
-    // height: calc(100vh - 215px);
-    // overflow: hidden;
-    .building-item{
-        fill: #fcf40700;
-        fill-opacity: 0.3;
-        stroke: #fcf40700;
-        stroke-width: 3px;
-        transition: .1s;
-        &:hover{
-            fill: #fcf407;   
-            stroke: #fcf407;
-        }
-    }
+.building-item, .floor-item{
+    fill: #fcf40700;
+    fill-opacity: 0.3;
+    stroke: #fcf40700;
+    cursor: pointer;
+    stroke-width: 4px;
+    transition: .1s;
+    &:hover{
+        fill: #fcf407;   
+        stroke: #fcf407;
+    }        
 }
+.active{
+    fill: #2407fc;
+        stroke: none;
+}
+.floor-item{    
+    &:hover{
+        fill: #07fc34;
+        stroke: none;
+    } 
+}
+.building-sold,.floor-sold{
+    &:hover{
+        fill: #fff;   
+        stroke: #fff;
+    }     
+}
+.floor-status{
+    fill-opacity: 1;
+}
+.floor-border{
+    stroke: #07fc3400;
+    stroke-width: 4px;
+    &:hover{        
+        stroke: #fcf407;
+    }       
+}
+.floor-status-overlay{
+    fill: #fff;
+    stroke: #000;
+    stroke-width: 2px;
+}
+.floor-number-overlay{
+    fill:#80D34E;    
+    stroke: #000;
+    stroke-width: 2px;
+}
+
+.floor-number-text{    
+    font-size: 16px;
+    font-weight: 700;
+    fill:#000;
+    }
+
+
