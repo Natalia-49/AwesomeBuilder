@@ -10,47 +10,84 @@
         stroke: #fcf407;
     }        
 }
-.active{
-    fill: #2407fc;
-        stroke: none;
-}
-.floor-item{    
-    &:hover{
-        fill: #07fc34;
-        stroke: none;
-    } 
-}
-.building-sold,.floor-sold{
+.building-sold, .floor-sold{
     &:hover{
         fill: #fff;   
         stroke: #fff;
     }     
 }
-.floor-status{
-    fill-opacity: 1;
+
+
+.floor-item{    
+    &:hover{
+        fill: #07fc34;
+        stroke: none;
+    } 
+    .floor-border{
+        stroke: #07fc3400;
+        stroke-width: 4px;
+        &:hover{        
+            stroke: #fcf407;
+        }       
+    }
+    .floor-status{
+        fill-opacity: 1;
+        .floor-status-overlay{
+            fill: #fff;
+            stroke: #000;
+            stroke-width: 2px;
+        }
+        .floor-number{
+            .floor-number-overlay{
+                fill:#13cbf49c;    
+                stroke: #000;
+                stroke-width: 2px;
+            }
+                
+            .floor-number-text{    
+                font-size: 16px;
+                font-weight: 700;
+                fill:#000;
+            }
+        }
+    }
 }
-.floor-border{
-    stroke: #07fc3400;
-    stroke-width: 4px;
-    &:hover{        
-        stroke: #fcf407;
-    }       
+.active{
+    fill: #07fc34;
+        stroke: none;
 }
-.floor-status-overlay{
-    fill: #fff;
-    stroke: #000;
-    stroke-width: 2px;
+.action{
+    .floor-status{
+        .floor-number{
+            .floor-number-overlay{
+                fill:#47e95792; 
+            }
+        }
+    }    
 }
-.floor-number-overlay{
-    fill:#80D34E;    
-    stroke: #000;
-    stroke-width: 2px;
+.reserved{
+    .floor-status{
+        .floor-number{
+            .floor-number-overlay{
+                fill:#0d10c890; 
+            }
+        }
+    }    
+}
+.sold{
+    .floor-status{
+        .floor-number{
+            .floor-number-overlay{
+                fill:#bb351d99; 
+            }
+        }
+    }    
 }
 
-.floor-number-text{    
-    font-size: 16px;
-    font-weight: 700;
-    fill:#000;
-    }
+            
+
+
+
+
 
 
